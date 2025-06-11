@@ -121,3 +121,9 @@ button:hover {
  height: auto;
   }
 }
+@media screen and (min-height: 800px) {
+  body{
+ background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+ height: auto;
+  }
+}

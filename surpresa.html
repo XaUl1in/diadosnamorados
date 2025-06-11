@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" />
+  <title>Feliz Dia dos Namorados 💖</title>
+  <link rel="stylesheet" href="style.css" />
+ <link rel="stylesheet" href="card.css">
+<link rel="shortcut icon" type="text" href="💛">
+</head>
+<body>
+
+  <div class="content">
+    <!--Musica-->
+  <audio autoplay loop>
+    <source src="assets/I Wanna Be Yours.mp3" type="audio/mp3" />
+  </audio>
+  
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="assets/2.jpg" style="width:500px; border-radius: 35px;">
+  </div>
+
+ <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="assets/3.jpg" style="width:500px; border-radius: 35px;">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="assets/4.jpg" style="width:500px; border-radius: 35px;">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="assets/5.jpg" style="width:500px; border-radius: 35px;">
+  </div>
+
+  <!-- Next and previous buttons
+   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a> 
+  -->
+ 
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+   <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+<div style="flex-direction: row; margin-top: 35px; margin-bottom: -60px;">
+<button class="prev" onclick="plusSlides(-1)">❮</button>
+<button class="next" onclick="plusSlides(1)">❯</button>
+</div>
+
+
+<div class="container">
+    <div class="plate">
+        <div class="black">
+            <div class="border">
+                <div class="white">
+                    <div class="center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="player">
+        <div class="rect"></div>
+        <div class="circ"></div>
+    </div>
+</div>
+   <h2 style="margin-bottom: -10px;">Feliz dia dos namorados💛</h2>
+   <p style="margin-bottom: -10px;">Te amo há:</p>
+    <p id="timer"></p>
+</div>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>

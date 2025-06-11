@@ -1,0 +1,78 @@
+:root {
+	--heart-color-1: #fff;
+	--heart-color-2: #24ffbe;
+	--heart-color-3: #72ff24;
+	--heart-color-4: #ffe024;
+	--heart-color-5: #ff7124;
+	--heart-color-6: #ff2424;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+}
+
+.heart-icon {
+	position: relative;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+}
+
+.heart-icon svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.heart-icon svg:nth-of-type(1) {
+	z-index: 6;
+	fill: var(--heart-color-1);
+	stroke: var(--heart-color-1);
+}
+.heart-icon svg:nth-of-type(2) {
+	z-index: 5;
+	fill: var(--heart-color-2);
+	stroke: var(--heart-color-2);
+}
+.heart-icon svg:nth-of-type(3) {
+	z-index: 4;
+	fill: var(--heart-color-3);
+	stroke: var(--heart-color-3);
+}
+.heart-icon svg:nth-of-type(4) {
+	z-index: 3;
+	fill: var(--heart-color-4);
+	stroke: var(--heart-color-4);
+}
+.heart-icon svg:nth-of-type(5) {
+	z-index: 2;
+	fill: var(--heart-color-5);
+	stroke: var(--heart-color-5);
+}
+.heart-icon svg:nth-of-type(6) {
+	z-index: 1;
+	fill: var(--heart-color-6);
+	stroke: var(--heart-color-6);
+}
+
+.leap {
+	animation: leap 0.8s;
+	transition-timing-function: cubic-bezier(0.000, 1.000, 1.000, 1.000);
+	animation-fill-mode: forwards;
+}
+
+@keyframes leap {
+	50% {
+		transform: translateY(-150px);
+	}
+	90% {
+		transform: translateY(2px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}

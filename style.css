@@ -6,7 +6,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
- 
   color: #fff;
   text-align: center;
 }
@@ -114,4 +113,11 @@ button:hover {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+@media screen and (max-width: 800px) {
+  body{
+ background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+ height: auto;
+  }
 }

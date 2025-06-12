@@ -10,6 +10,7 @@ html, body {
   text-align: center;
   height: 100%;
   min-height: 100vh;
+  font-size: large;
 }
 
 .container, .content {
@@ -119,6 +120,12 @@ button:hover {
 }
 
 @media screen and (max-width: 800px) {
+  body{
+ background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+ height: auto;
+  }
+}
+@media screen and (min-height: 800px) {
   body{
  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
  height: auto;
